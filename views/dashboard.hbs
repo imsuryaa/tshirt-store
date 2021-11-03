@@ -1,0 +1,21 @@
+<h6>Dashboard</h6>
+<h3>Welcome {{name}}</h3>
+{{#if orders}}
+<table class="striped">
+    <thead>
+        <tr>
+            <th>Title</th>
+            <th>Date</th>
+            <th>Status</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each orders}}
+        <!-- Orders should display here -->
+        {{/each}}
+    </tbody>
+</table>
+{{else}}
+<p>You have not ordered any t-shirts</p>
+{{/if}}
